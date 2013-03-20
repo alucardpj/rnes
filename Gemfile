@@ -23,7 +23,6 @@ end
 gem 'jquery-rails'
 gem 'twitter-bootstrap-rails'
 gem 'jquery-ui-rails'
-gem 'therubyracer'
 gem 'mongoid', '~> 3.1.0'
 
 #gem 'devise'
