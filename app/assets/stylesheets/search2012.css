@@ -1,0 +1,19 @@
+﻿.sortListPic dl {float:left;margin:0 0 0 10px; display:inline;width:740px;border-bottom:1px #98CDED dotted;padding:20px 0 5px;}
+.sortListPic dl {background-color:white;}
+.sortListPic dl dt{float:left;width:115px;}
+.sortListPic dl dt a{float:left;padding:2px;border:1px #cccccc solid;}
+.sortListPic dl dt a:hover{border:1px #999 solid;}
+.sortListPic dl dt img{width:96px;height:120px;border:0px;}
+.sortListPic dl dd{float:left;width:620px;margin:0 0 3px;line-height:20px; color:#888; font-size:12px;}
+.sortListPic dl dd em{ font-style:normal; color:#333; margin-right:50px;}
+.sortListPic dl dd em a{ color:#333;}
+.sortListPic dl dd em a:hover{ color:#f60;}
+.sortListPic dl dd u{text-decoration:none;}
+.sortListPic dl dd.list_title{ color:#333; font-size:14px;}
+.sortListPic dl dd.none{display:none;}
+.sortListPic .fl{ margin:-19px 0 0 60px; width:540px;overflow:hidden; word-warp: break-word; word-break: break-all;/*Only work in IE*/text-overflow: ellipsis;/*Not working in FF*/ }
+.sortListPic h2{ border-top:1px solid #ccc; margin:30px 10px 0 0; padding:15px 0 0 10px; font-size:14px; color:#000}
+.sortListPic dl dd.bottomDD{ position:relative;}
+.sortListPic dl dd.bottomDD span{ display:block; width:500px; position:absolute; right:5px; bottom:0; text-align:right;}
+.sortListPic dl dd.bottomDD span em{margin-right:20px; }
+.sortListPic dl dd.bottomDD span em.redEm{color:#F00;}

@@ -1,4 +1,6 @@
 Rnes::Application.routes.draw do
+  resources :results
+
   get "demo/index"
 
   # The priority is based upon order of creation:
