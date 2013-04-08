@@ -1,5 +1,7 @@
 zh:
+  sidebar: "query列表"
   demo:
     index:
       score: "评分"
       opinion: "意见"
+      submit: "提交"

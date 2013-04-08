@@ -3,8 +3,10 @@
 
 <form class="form-horizontal">
   <% (1..5).each do |index| %>
-    <div class="row-fluid">
-      <div class="span7"><h3><a href="http://lishi.qidian.com/Book/1013928.aspx" target="_blank" style="color:#0000ff" onkeydown="var evt=window.event?window.event:event;if(evt.keyCode==13){statOpenLink();}" onmousedown="statOpenLink();"><b style="color:red">极</b><b style="color:red">品</b><b style="color:red">乞</b><b style="color:red">丐</b></a> / <a href="http://sq.qidian.com/Author/170563.aspx" target="_blank" style="color:#0000ff">卖炭</a> / <a href="http://wuxia.qidian.com/" target="_blank" style="color:#0000ff">武侠</a></h3><div class="clear"></div><dl><dt>简&nbsp;&nbsp;&nbsp;&nbsp;介：</dt><dd> 不风流也不下流是本书的宗旨. 洪七公传下的神丐门,是丐帮的一个分枝,一直以来都只有一脉单传,那是因为门主都是懒得出奇的<b style="color:red">乞丐</b>,收一个弟子已经是极限了.自九指以下,是八指半,八指,到了第十八代张大这里,就是半指神丐了.降龙十八掌在一直传下之后,一路减少,到了半指神丐这里,也就只剩下半掌了...</dd><dl><dt>最新更新：</dt><dd><a href="http://www.qidian.com/BookReader/1013928,20344029.aspx" target="_blank">第一卷 都市里的半指神丐　第八章 洪门五人组与偷人</a></dd></dl><dl><dt>更新时间：</dt><dd>2008-5-18 14:58</dd></dl></dl></div>
+    <div class="row-fluid resultitem">
+      <div class="span7">
+        <h3><a href="http://lishi.qidian.com/Book/1013928.aspx" target="_blank" style="color:#0000ff" onkeydown="var evt=window.event?window.event:event;if(evt.keyCode==13){statOpenLink();}" onmousedown="statOpenLink();"><b>极</b><b>品</b><b>乞</b><b>丐</b></a> / <a href="http://sq.qidian.com/Author/170563.aspx" target="_blank" style="color:#0000ff">卖炭</a> / <a href="http://wuxia.qidian.com/" target="_blank" style="color:#0000ff">武侠</a></h3><div class="clear"></div><dl><dt>简&nbsp;&nbsp;&nbsp;&nbsp;介：</dt><dd> 不风流也不下流是本书的宗旨. 洪七公传下的神丐门,是丐帮的一个分枝,一直以来都只有一脉单传,那是因为门主都是懒得出奇的<b>乞丐</b>,收一个弟子已经是极限了.自九指以下,是八指半,八指,到了第十八代张大这里,就是半指神丐了.降龙十八掌在一直传下之后,一路减少,到了半指神丐这里,也就只剩下半掌了...</dd><dl><dt>最新更新：</dt><dd><a href="http://www.qidian.com/BookReader/1013928,20344029.aspx" target="_blank">第一卷 都市里的半指神丐　第八章 洪门五人组与偷人</a></dd></dl><dl><dt>更新时间：</dt><dd>2008-5-18 14:58</dd></dl></dl>
+      </div>
       <div class= "span5">
         <div class="control-group">
           <label class="control-label" for="optionsRadios"><%= t("demo.index.score")%></label>
@@ -31,10 +33,10 @@
         </div>
       </div>
     </div>
-  <% end%>
+  <% end %>
   <div class="control-group">
     <div class="controls">
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary"><%= t("demo.index.submit") %></button>
     </div>
   </div>
 </form>
