@@ -24,6 +24,7 @@ gem 'jquery-rails'
 gem 'twitter-bootstrap-rails'
 gem 'jquery-ui-rails'
 gem 'mongoid', '~> 3.1.0'
+gem 'mongoid_auto_increment_id', "0.6.0"
 
 #gem 'devise'
 

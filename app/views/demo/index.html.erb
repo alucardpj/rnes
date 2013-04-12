@@ -2,12 +2,34 @@
 <%= render :partial => "sidebar" %>
 
 <form class="form-horizontal">
-  <% (1..5).each do |index| %>
-    <div class="row-fluid resultitem">
-      <div class="span7">
-        <h3><a href="http://lishi.qidian.com/Book/1013928.aspx" target="_blank" style="color:#0000ff" onkeydown="var evt=window.event?window.event:event;if(evt.keyCode==13){statOpenLink();}" onmousedown="statOpenLink();"><b>极</b><b>品</b><b>乞</b><b>丐</b></a> / <a href="http://sq.qidian.com/Author/170563.aspx" target="_blank" style="color:#0000ff">卖炭</a> / <a href="http://wuxia.qidian.com/" target="_blank" style="color:#0000ff">武侠</a></h3><div class="clear"></div><dl><dt>简&nbsp;&nbsp;&nbsp;&nbsp;介：</dt><dd> 不风流也不下流是本书的宗旨. 洪七公传下的神丐门,是丐帮的一个分枝,一直以来都只有一脉单传,那是因为门主都是懒得出奇的<b>乞丐</b>,收一个弟子已经是极限了.自九指以下,是八指半,八指,到了第十八代张大这里,就是半指神丐了.降龙十八掌在一直传下之后,一路减少,到了半指神丐这里,也就只剩下半掌了...</dd><dl><dt>最新更新：</dt><dd><a href="http://www.qidian.com/BookReader/1013928,20344029.aspx" target="_blank">第一卷 都市里的半指神丐　第八章 洪门五人组与偷人</a></dd></dl><dl><dt>更新时间：</dt><dd>2008-5-18 14:58</dd></dl></dl>
+  <div id='sortable'>
+    <% (1..5).each do |index| %>
+      <div class="row-fluid resultitem">
+        <div class="span8">
+          <div class="row-fluid" >
+          <div class="pic_box span3">
+            <a href="/Book/1434080.aspx">
+              <img src="http://image.cmfu.com/books/1434080/1434080.jpg" alt="《斗破天》作者：斗破兽医" class="img-polaroid">
+            </a>
+          </div>
+          <div class="span9">
+            <h4>
+            <a href="http://lishi.qidian.com/Book/1013928.aspx" target="_blank" style="color:#0000ff" onkeydown="var evt=window.event?window.event:event;if(evt.keyCode==13){statOpenLink();}" onmousedown="statOpenLink();"><b>极</b><b>品</b><b>乞</b><b>丐</b></a></h4>
+            
+            <dl>
+              <dt>作&nbsp;&nbsp;&nbsp;&nbsp;者：</dt>
+              <dd> <a href="http://sq.qidian.com/Author/170563.aspx" target="_blank">卖炭</a></dd>
+              <div class="row-fluid">
+            <div class="span4"><strong>总点击：</strong>141657519</div>
+            <div class="span3"><strong>总推荐：</strong>6565849</div>
+            <div class="span5"><strong>更新时间：</strong>2012-04-01 11:58</div></div>
+              <dt>简&nbsp;&nbsp;&nbsp;&nbsp;介：</dt>
+              <dd> 不风流也不下流是本书的宗旨. 洪七公传下的神丐门,是丐帮的一个分枝,一直以来都只有一脉单传,那是因为门主都是懒得出奇的<b>乞丐</b>,收一个弟子已经是极限了.自九指以下,是八指半,八指,到了第十八代张大这里,就是半指神丐了.降龙十八掌在一直传下之后,一路减少,到了半指神丐这里,也就只剩下半掌了...</dd>
+            </dl>
+          </div>
+        </div>
       </div>
-      <div class= "span5">
+      <div class= "span4">
         <div class="control-group">
           <label class="control-label" for="optionsRadios"><%= t("demo.index.score")%></label>
           <div class="controls">
@@ -28,12 +50,13 @@
         <div class="control-group">
           <label class="control-label" for="opinion"><%= t("demo.index.opinion") %></label>
           <div class="controls">
-            <input type="text" id=<%= "options#{index}" %> placeholder= <%= t("demo.index.opinion") %> >
+            <input class="input-medium" type="text" id=<%= "options#{index}" %> placeholder= <%= t("demo.index.opinion") %> >
           </div>
         </div>
       </div>
     </div>
-  <% end %>
+    <% end %>
+  </div>
   <div class="control-group">
     <div class="controls">
       <button type="submit" class="btn btn-primary"><%= t("demo.index.submit") %></button>

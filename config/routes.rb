@@ -1,5 +1,6 @@
 Rnes::Application.routes.draw do
   resources :results
+  resources :queries
 
   get "demo/index"
 

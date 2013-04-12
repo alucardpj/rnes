@@ -1,5 +1,5 @@
 <% content_for :sidebar do %>
-  <% (1..50).each do |index| %>
-    <li id=<%= "li#{index}"%> ><%= link_to "Link1#{index}", "/path1#{index}"  %></li>
+  <% @queries.each do |query| %>
+    <li id=<%= "li#{query.keyword}"%> ><%= link_to query.keyword, "/path1#{query.keyword}"  %></li>
   <% end %>
 <% end %>
